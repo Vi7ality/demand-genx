@@ -19,8 +19,8 @@
     <title>Demand GenX</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="py-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="/">
             <img src="./images/logo.png" alt="DemandGenX Logo" width="239" />
@@ -45,6 +45,9 @@
               <li class="nav-item"><a class="nav-link nav-link_styled" href="#">Company</a></li>
               <li class="nav-item"><a class="nav-link nav-link_styled" href="#">Community</a></li>
             </ul>
+            <!-- <svg>
+              <use href="" />
+            </svg> -->
             <form class="d-flex">
               <button class="btn btn-primary demo-btn" type="button">Request a Demo</button>
             </form>
@@ -52,7 +55,75 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="hero-section text-start text-white bg-hero">
+        <div class="container d-flex">
+          <div class="side-pannel">
+            <p class="follow-text-styled">FOLLOW US</p>
+            <ul class="soc-list">
+              <li>
+                <a href="">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="subheading subheading-styles">35 YEARS OF GLOBAL OZONE LAYER PROTECTION</p>
+            <h1 class="hero-heading hero-title-styled">Much, much more than a webinar platform</h1>
+            <p class="lead mb-4 hero-text">
+              B2B marketers turn to DemandgenX for end-to-end video content creation, delivery and
+              distribution that drives industry-leading brand engagement and pipeline impact.
+            </p>
+
+            <!-- Registration Form -->
+            <div class="row mb-5">
+              <div class="col-md-8">
+                <form class="bg-register">
+                  <div>
+                    <p class="input-text">Register using email address</p>
+                    <input
+                      type="email"
+                      class="form-control email-input border border-0 input-styles"
+                      placeholder="sample@email.com"
+                    />
+                  </div>
+                  <button class="btn btn-primary register-btn register-btn-styles" type="button">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Learn More Link -->
+            <a href="#" class="text-white text-decoration-none learn-more-link"
+              >Learn more
+              <svg class="arrow-down-icon">
+                <use href="./images/icons.svg#icon-arrow-down" />
+              </svg>
+            </a>
+
+            <!-- Profile Pictures Section -->
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
