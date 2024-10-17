@@ -76,99 +76,121 @@
     <main>
       <!-- HERO section -->
       <section class="hero-section text-start text-white bg-hero">
-        <div class="d-flex">
-          <div class="side-pannel">
-            <p class="follow-text-styled">FOLLOW US</p>
-            <ul class="soc-list">
-              <li>
-                <a href="">
-                  <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="social-icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p class="subheading subheading-styles">35 YEARS OF GLOBAL OZONE LAYER PROTECTION</p>
-            <h1 class="hero-heading hero-title-styled">Much, much more than a webinar platform</h1>
-            <div class="flex-between-wrap">
-              <div>
-                <p class="lead mb-4 hero-text mb-1">
-                  B2B marketers turn to DemandgenX for end-to-end video content creation, delivery
-                  and distribution that drives industry-leading brand engagement and pipeline
-                  impact.
-                </p>
-                <!-- Registration Form -->
-                <div class="row mb-5">
-                  <div class="">
-                    <form class="bg-register">
-                      <div>
-                        <p class="input-text mb-1">Register using email address</p>
-                        <input
-                          type="email"
-                          class="form-control email-input border border-0 input-styles"
-                          placeholder="sample@email.com"
-                        />
-                      </div>
-                      <button
-                        class="btn btn-primary register-btn register-btn-styles"
-                        type="button"
-                      >
-                        Register
-                      </button>
-                    </form>
-                  </div>
-                </div>
-
-                <!-- Learn More Link -->
-                <a href="#" class="text-white text-decoration-none learn-more-link"
-                  >Learn more
-                  <svg class="arrow-down-icon">
-                    <use href="./images/icons.svg#icon-arrow-down" />
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Caurosel -->
-              <div class="slider-container">
-                <div class="slick-slider">
-                  <div class="slider-item-styled">
-                    <img src="./images/staff-img-1.jpg" alt="staff photo" height="492" />
-                  </div>
-                  <div class="slider-item-styled">
-                    <img src="./images/staff-img-2.jpg" alt="staff photo" height="492" />
-                  </div>
-                  <div class="slider-item-styled">
-                    <img src="./images/staff-img-3.jpg" alt="staff photo" height="492" />
-                  </div>
-                </div>
-                <button class="prev-arrow">
-                  <svg>
-                    <use href="./images/icons.svg#icon-arrow-left" />
-                  </svg>
-                </button>
-                <button class="next-arrow">
-                  <svg>
-                    <use href="./images/icons.svg#icon-arrow-right" />
-                  </svg>
-                </button>
-              </div>
+        <div class="">
+          <div class="row">
+            <!-- Left Panel: Follow us -->
+            <div class="col-lg-1 col-md-2 d-none d-md-flex side-pannel">
+              <p class="follow-text-styled">FOLLOW US</p>
+              <ul class="soc-list">
+                <li>
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg class="social-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+
+            <!-- Hero Content -->
+            <div class="col-lg-7 col-md-10">
+              <p class="subheading subheading-styles">35 YEARS OF GLOBAL OZONE LAYER PROTECTION</p>
+              <h1 class="hero-heading hero-title-styled">
+                Much, much more than a webinar platform
+              </h1>
+              <p class="lead mb-4 hero-text mb-1">
+                B2B marketers turn to DemandgenX for end-to-end video content creation, delivery,
+                and distribution that drives industry-leading brand engagement and pipeline impact.
+              </p>
+
+              <!-- Registration Form -->
+              <div class="row mb-5">
+                <div class="col-12">
+                  <form class="bg-register">
+                    <div>
+                      <p class="input-text mb-1">Register using email address</p>
+                      <input
+                        type="email"
+                        class="form-control email-input border border-0 input-styles"
+                        placeholder="sample@email.com"
+                      />
+                    </div>
+                    <button
+                      class="btn btn-primary register-btn register-btn-styles mt-3"
+                      type="button"
+                    >
+                      Register
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Learn More Link -->
+              <a href="#" class="text-white text-decoration-none learn-more-link">
+                Learn more
+                <svg class="arrow-down-icon">
+                  <use href="./images/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Slider Section -->
+            <div class="col-lg-3 col-md-12 mt-5 mt-lg-0 slider-container">
+              <div class="slick-slider">
+                <div class="slider-item-styled">
+                  <img src="./images/staff-img-1.jpg" alt="staff photo" class="img-fluid rounded" />
+                </div>
+                <div class="slider-item-styled">
+                  <img src="./images/staff-img-2.jpg" alt="staff photo" class="img-fluid rounded" />
+                </div>
+                <div class="slider-item-styled">
+                  <img src="./images/staff-img-3.jpg" alt="staff photo" class="img-fluid rounded" />
+                </div>
+              </div>
+              <button class="prev-arrow">
+                <svg>
+                  <use href="./images/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="next-arrow">
+                <svg>
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get started section -->
+      <section class="container my-5">
+        <div class="row">
+          <!-- Left side: Main image with play button -->
+          <div class="col-lg-6 col-md-12 mb-4 get-started__collage">
+            <div class="position-relative">
+              <img src="./images/get-started-collage.png" class="img-fluid" alt="Main Image" />
+            </div>
+          </div>
+
+          <!-- Right side: Text  -->
+          <div class="col-lg-6 col-md-12 get-started_content-wrap">
+            <h2 class="get-started_title">Get Started with Demand GenX Today!</h2>
+            <p class="mb-4 get-started_text">Join thousands of customers powered by DemandGenX</p>
+            <a href="#" class="btn btn-primary learn-more-link-2">Learn more</a>
           </div>
         </div>
       </section>
