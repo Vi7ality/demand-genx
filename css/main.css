@@ -374,21 +374,70 @@ body {
 
 /* Platform section */
 
-.stats-box {
-  background-color: #e0f7fa;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 10px 0;
+.platform-section {
+  background-color: #f7f7f7; /* Optional background for the section */
 }
-.cta-buttons {
-  margin-top: 20px;
+
+.platform-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
 }
-.cta-buttons .btn {
-  margin-right: 10px;
+
+.platform_main-heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 80%;
+  margin-top: 43px;
 }
-.virtual-meeting img {
-  width: 100%;
+
+.platform_lead {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.platform_btn-primary,
+.platform_btn-outline-primary {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #4967f2 0%, #7c61f0 100%);
+  color: var(--primary-white-color);
+}
+
+.platform_img-fluid {
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-group {
+  position: absolute;
+  bottom: 0;
+  left: -35%;
+}
+
+.stat-item {
+  border-radius: 14px 14px 0 14px;
+  width: 151px;
+  height: 148px;
+  background-color: #81a8c4;
+  opacity: 0.7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 67%;
+  text-align: center;
+  color: #122b4e;
 }
