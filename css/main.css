@@ -61,6 +61,30 @@ body {
   line-height: 133%;
 }
 
+.search-wrap {
+  width: 200px;
+}
+
+.search-input {
+  background-image: url("../images/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 50%;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+  padding: 12px;
+  margin-right: 27px;
+}
+
+.search-input:focus {
+  width: 200px;
+  border-radius: 30px;
+  padding-left: 40px;
+}
+
 .bg-hero {
   padding-top: 118px;
   padding-bottom: 80px;
