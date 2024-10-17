@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +24,13 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link href="./css/main.css" rel="stylesheet" />
     <title>Demand GenX</title>
@@ -57,6 +74,7 @@
       </nav>
     </header>
     <main>
+      <!-- HERO section -->
       <section class="hero-section text-start text-white bg-hero">
         <div class="d-flex">
           <div class="side-pannel">
@@ -88,39 +106,69 @@
           <div>
             <p class="subheading subheading-styles">35 YEARS OF GLOBAL OZONE LAYER PROTECTION</p>
             <h1 class="hero-heading hero-title-styled">Much, much more than a webinar platform</h1>
-            <p class="lead mb-4 hero-text mb-1">
-              B2B marketers turn to DemandgenX for end-to-end video content creation, delivery and
-              distribution that drives industry-leading brand engagement and pipeline impact.
-            </p>
-
-            <!-- Registration Form -->
-            <div class="row mb-5">
-              <div class="col-md-8">
-                <form class="bg-register">
-                  <div>
-                    <p class="input-text mb-1">Register using email address</p>
-                    <input
-                      type="email"
-                      class="form-control email-input border border-0 input-styles"
-                      placeholder="sample@email.com"
-                    />
+            <div class="flex-between-wrap">
+              <div>
+                <p class="lead mb-4 hero-text mb-1">
+                  B2B marketers turn to DemandgenX for end-to-end video content creation, delivery
+                  and distribution that drives industry-leading brand engagement and pipeline
+                  impact.
+                </p>
+                <!-- Registration Form -->
+                <div class="row mb-5">
+                  <div class="">
+                    <form class="bg-register">
+                      <div>
+                        <p class="input-text mb-1">Register using email address</p>
+                        <input
+                          type="email"
+                          class="form-control email-input border border-0 input-styles"
+                          placeholder="sample@email.com"
+                        />
+                      </div>
+                      <button
+                        class="btn btn-primary register-btn register-btn-styles"
+                        type="button"
+                      >
+                        Register
+                      </button>
+                    </form>
                   </div>
-                  <button class="btn btn-primary register-btn register-btn-styles" type="button">
-                    Register
-                  </button>
-                </form>
+                </div>
+
+                <!-- Learn More Link -->
+                <a href="#" class="text-white text-decoration-none learn-more-link"
+                  >Learn more
+                  <svg class="arrow-down-icon">
+                    <use href="./images/icons.svg#icon-arrow-down" />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Caurosel -->
+              <div class="slider-container">
+                <div class="slick-slider">
+                  <div class="slider-item-styled">
+                    <img src="./images/staff-img-1.jpg" alt="staff photo" height="492" />
+                  </div>
+                  <div class="slider-item-styled">
+                    <img src="./images/staff-img-2.jpg" alt="staff photo" height="492" />
+                  </div>
+                  <div class="slider-item-styled">
+                    <img src="./images/staff-img-3.jpg" alt="staff photo" height="492" />
+                  </div>
+                </div>
+                <button class="prev-arrow">
+                  <svg>
+                    <use href="./images/icons.svg#icon-arrow-left" />
+                  </svg>
+                </button>
+                <button class="next-arrow">
+                  <svg>
+                    <use href="./images/icons.svg#icon-arrow-right" />
+                  </svg>
+                </button>
               </div>
             </div>
-
-            <!-- Learn More Link -->
-            <a href="#" class="text-white text-decoration-none learn-more-link"
-              >Learn more
-              <svg class="arrow-down-icon">
-                <use href="./images/icons.svg#icon-arrow-down" />
-              </svg>
-            </a>
-
-            <!-- Profile Pictures Section -->
           </div>
         </div>
       </section>
@@ -131,5 +179,23 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(".slick-slider").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $(".prev-arrow"),
+        nextArrow: $(".next-arrow"),
+      });
+    </script>
   </body>
 </html>

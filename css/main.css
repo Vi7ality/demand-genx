@@ -86,6 +86,8 @@ body {
 }
 
 .bg-hero {
+  position: relative;
+  overflow: hidden;
   padding-top: 118px;
   padding-bottom: 80px;
   background: linear-gradient(
@@ -154,6 +156,12 @@ body {
   margin-bottom: 55px;
 }
 
+.flex-between-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
 .hero-text {
   font-weight: 400;
   font-size: 31px;
@@ -206,4 +214,51 @@ body {
   height: 40px;
 
   margin-left: 15px;
+}
+.slider-container {
+  /* position: relative; */
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 20px 0;
+}
+.slick-slider img {
+  padding: 10px;
+  height: 492px;
+  width: 100%;
+  border-radius: 10px;
+}
+.slick-slide {
+  width: 406px !important;
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  /* background-color: #ffffff; */
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-arrow svg,
+.next-arrow svg {
+  width: 36px;
+  height: 26px;
+}
+
+.prev-arrow {
+  bottom: 0;
+  right: 25%;
+}
+
+.next-arrow {
+  bottom: 0;
+  right: 15%;
 }
