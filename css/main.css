@@ -165,6 +165,13 @@ body {
   flex-wrap: wrap;
   max-width: 788px;
 }
+
+.input-text {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: #b2afb6;
+}
 .input-styles {
   font-weight: 600;
   font-size: 24px;
@@ -216,12 +223,6 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-}
-.prev-arrow {
-  left: 5%;
-}
-.next-arrow {
-  right: 5%;
 }
 
 /* Responsive Breakpoints */
@@ -354,7 +355,7 @@ body {
   color: var(--text-grey-color);
 }
 
-.btn-primary {
+.audience_btn {
   border-radius: 7px;
   width: 352px;
   height: 65px;
@@ -369,4 +370,25 @@ body {
 
 .shadow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Platform section */
+
+.stats-box {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+.cta-buttons {
+  margin-top: 20px;
+}
+.cta-buttons .btn {
+  margin-right: 10px;
+}
+.virtual-meeting img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
