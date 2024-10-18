@@ -401,8 +401,6 @@ body {
 .platform_btn-primary,
 .platform_btn-outline-primary {
   border-radius: 14px;
-  width: 360px;
-  height: 68px;
   background: linear-gradient(90deg, #4967f2 0%, #7c61f0 100%);
   color: var(--primary-white-color);
   display: flex;
@@ -450,4 +448,54 @@ body {
   line-height: 67%;
   text-align: center;
   color: #122b4e;
+}
+
+/* Lead generation */
+
+.lead-section-bg {
+  background-image: url("../images/lead-generation_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.lead-text-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  color: var(--text-grey-color);
+}
+
+.lead-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 96%;
+  letter-spacing: 0.05em;
+}
+
+.lead-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 113%;
+}
+
+.lead-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+}
+
+.lead-btn-link {
+  color: var(--primary-white-color);
+  background: linear-gradient(90deg, #7c61f0 0%, #4867f2 100%);
+  border-radius: 10px;
+  width: 282px;
+  height: 64px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 105%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
