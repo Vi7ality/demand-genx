@@ -586,6 +586,20 @@ body {
   background-position: right;
 }
 
+@media (max-width: 1400px) {
+  .lead-second-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lead-second-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .lead-text-flex {
   display: flex;
   flex-direction: column;
