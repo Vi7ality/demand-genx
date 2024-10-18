@@ -409,7 +409,14 @@ body {
 /* Platform section */
 
 .platform-section {
-  background-color: #f7f7f7; /* Optional background for the section */
+  padding-top: 149px;
+  background-color: #f7f7f7;
+}
+
+@media (min-width: 1200px) {
+  .platform-section {
+    padding-left: 133px;
+  }
 }
 
 .platform-heading {
@@ -456,17 +463,23 @@ body {
 .stat-group {
   position: absolute;
   bottom: 0;
-  left: -25%;
+  left: 0;
   display: flex;
   gap: 13px;
   flex-wrap: wrap;
-  width: 400px;
+  width: 300px;
+}
+
+@media (min-width: 1400px) {
+  .stat-group {
+    left: -25%;
+  }
 }
 
 .stat-item {
   border-radius: 14px 14px 0 14px;
-  width: 151px;
-  height: 148px;
+  width: 100px;
+  height: 100px;
   background-color: #81a8c4;
   opacity: 0.7;
 
@@ -478,10 +491,62 @@ body {
 
 .stat-number {
   font-weight: 300;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 67%;
   text-align: center;
   color: #122b4e;
+}
+
+@media (min-width: 768px) {
+  .stat-group {
+    width: 400px;
+  }
+
+  .stat-item {
+    width: 150px;
+    height: 150px;
+  }
+  .stat-number {
+    font-size: 40px;
+  }
+}
+
+.platform-section-decor-1 {
+  position: absolute;
+  top: 73px;
+  left: 87px;
+  z-index: 1;
+  background-image: url("../images/platform-left-up-decor.png");
+  background-size: contain;
+  width: 92px;
+  height: 92px;
+}
+.platform-section-decor-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("../images/platform-right-up-decor.png");
+  background-size: contain;
+  width: 156px;
+  height: 154px;
+}
+.platform-section-decor-3 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("../images/platform-left-down-decor.png");
+  background-size: contain;
+  width: 267px;
+  height: 211px;
+}
+
+@media (min-width: 1400px) {
+  .platform-section-decor-3 {
+    display: block;
+  }
 }
 
 /* Lead generation */
