@@ -6,7 +6,7 @@
   --text-orange-color: #fd8500;
 
   --main-font-family: "Inter";
-  --secondary-font-family: "Poppins";
+  --third-font-family: "Poppins";
 }
 
 p,
@@ -47,6 +47,13 @@ iframe {
 
 body {
   font-family: var(--main-font-family);
+}
+
+/* Utils */
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Header */
@@ -167,7 +174,7 @@ body {
 }
 
 .input-text {
-  font-family: var(--secondary-font-family);
+  font-family: var(--third-font-family);
   font-weight: 400;
   font-size: 15px;
   color: #b2afb6;
@@ -495,7 +502,45 @@ body {
   font-weight: 700;
   font-size: 27px;
   line-height: 105%;
+}
+
+/* Content services */
+
+.flex-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.content-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80%;
+  letter-spacing: 0.04em;
+  color: var(--text-grey-color);
+}
+
+.content-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 80%;
+  color: var(--text-grey-color);
+}
+
+.content-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  color: var(--text-grey-color);
+}
+
+.content-btn-link {
+  border-radius: 10px;
+  width: 370px;
+  height: 71px;
+  background: linear-gradient(170deg, #4667f2 0%, #7c61f0 99.01%);
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
 }
