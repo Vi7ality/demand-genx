@@ -665,6 +665,12 @@ body {
   color: var(--text-grey-color);
 }
 
+.stats {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .stats-left {
   border-radius: 20px 0 0 20px;
   box-shadow: 0 4px 30px -20px rgba(0, 0, 0, 0.59);
