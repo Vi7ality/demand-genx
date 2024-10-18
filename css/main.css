@@ -563,3 +563,24 @@ body {
   margin-top: 40px;
   color: var(--text-grey-color);
 }
+
+.stats-left {
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 4px 30px -20px rgba(0, 0, 0, 0.59);
+  background: #4d66f1;
+}
+
+.stats-right {
+  border-radius: 0 20px 20px 0;
+  background: rgba(217, 217, 217, 0.3);
+}
+
+.stats-right_link {
+  border-radius: 5px;
+  width: 261px;
+  height: 59px;
+  background: linear-gradient(90deg, #4867f2 0%, #7c61f0 100%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 87%;
+}
