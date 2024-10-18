@@ -7,6 +7,8 @@
 
   --main-font-family: "Inter";
   --third-font-family: "Poppins";
+
+  --accent-color: #52faf3;
 }
 
 p,
@@ -54,6 +56,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-link-icon {
+  fill: var(--primary-white-color);
+}
+.social-link-icon:hover {
+  fill: var(--accent-color);
+  transition: fill 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 /* Header */
