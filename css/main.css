@@ -505,7 +505,9 @@ body {
 }
 
 /* Content services */
-
+.content-section-bg {
+  background: rgba(207, 207, 209, 0.3);
+}
 .flex-content {
   display: flex;
   flex-direction: column;
@@ -543,4 +545,21 @@ body {
   font-weight: 500;
   font-size: 22px;
   line-height: 140%;
+}
+
+/* Reviews */
+
+.reviews-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 80%;
+  color: var(--text-grey-color);
+}
+
+.reviews-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 107%;
+  margin-top: 40px;
+  color: var(--text-grey-color);
 }
