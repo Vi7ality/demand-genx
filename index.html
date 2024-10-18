@@ -13,6 +13,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,7 +83,9 @@
         <div class="px-5">
           <div class="row">
             <!-- Left Panel: Follow us -->
-            <div class="col-lg-1 col-md-2 d-none d-md-flex side-pannel">
+            <div
+              class="col-lg-1 col-md-2 d-none d-md-flex side-pannel animate__animated animate__slideInUp"
+            >
               <p class="follow-text-styled">FOLLOW US</p>
               <ul class="soc-list">
                 <li>
@@ -112,13 +118,13 @@
               <h1 class="hero-heading hero-title-styled">
                 Much, much more than a webinar platform
               </h1>
-              <p class="lead mb-4 hero-text mb-1">
+              <p class="lead mb-4 hero-text mb-1 animate__animated animate__slideInLeft">
                 B2B marketers turn to DemandgenX for end-to-end video content creation, delivery,
                 and distribution that drives industry-leading brand engagement and pipeline impact.
               </p>
 
               <!-- Registration Form -->
-              <div class="row mb-5">
+              <div class="row mb-5 animate__animated animate__slideInLeft">
                 <div class="col-12">
                   <form class="bg-register">
                     <div>
@@ -140,16 +146,20 @@
               </div>
 
               <!-- Learn More Link -->
-              <a href="#" class="text-white text-decoration-none learn-more-link">
-                Learn more
-                <svg class="arrow-down-icon">
-                  <use href="./images/icons.svg#icon-arrow-down"></use>
-                </svg>
-              </a>
+              <div class="animate__animated animate__slideInLeft">
+                <a href="#" class="text-white text-decoration-none learn-more-link">
+                  Learn more
+                  <svg class="arrow-down-icon">
+                    <use href="./images/icons.svg#icon-arrow-down"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <!-- Slider Section -->
-            <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 slider-container">
+            <div
+              class="col-lg-4 col-md-12 mt-5 mt-lg-0 slider-container animate__animated animate__slideInRight"
+            >
               <div class="slick-slider">
                 <div class="slider-item-styled">
                   <img src="./images/staff-img-1.jpg" alt="staff photo" class="img-fluid rounded" />
