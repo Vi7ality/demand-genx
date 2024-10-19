@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -85,9 +86,7 @@
         <div class="px-5">
           <div class="row">
             <!-- Left Panel: Follow us -->
-            <div
-              class="col-lg-1 col-md-2 d-none d-md-flex side-pannel animate__animated animate__slideInUp"
-            >
+            <div class="col-lg-1 col-md-2 d-none d-md-flex side-pannel" data-aos="slide-up">
               <p class="follow-text-styled">FOLLOW US</p>
               <ul class="soc-list">
                 <li>
@@ -126,7 +125,7 @@
               </p>
 
               <!-- Registration Form -->
-              <div class="row mb-5 animate__animated animate__slideInLeft">
+              <div class="row mb-5" data-aos="slide-left">
                 <div class="col-12">
                   <form class="bg-register">
                     <div>
@@ -148,7 +147,7 @@
               </div>
 
               <!-- Learn More Link -->
-              <div class="animate__animated animate__slideInLeft">
+              <div>
                 <a href="#" class="text-white text-decoration-none learn-more-link">
                   Learn more
                   <svg class="arrow-down-icon">
@@ -159,9 +158,7 @@
             </div>
 
             <!-- Slider Section -->
-            <div
-              class="col-xl-4 col-lg-12 mt-5 mt-lg-0 position-relative slider-container animate__animated animate__slideInRight"
-            >
+            <div class="col-xl-4 col-lg-12 mt-5 mt-lg-0 position-relative" data-aos="slide-right">
               <div class="slick-slider">
                 <div class="slider-item-styled">
                   <img src="./images/staff-img-1.jpg" alt="staff photo" class="img-fluid rounded" />
@@ -194,9 +191,7 @@
         <div class="container-fluid px-5">
           <div class="row">
             <!-- Left side: Img -->
-            <div
-              class="col-lg-6 col-md-12 mb-4 get-started__collage animate__animated animate__slideInLeft"
-            >
+            <div class="col-lg-6 col-md-12 mb-4 get-started__collage" data-aos="slide-left">
               <div class="position-relative">
                 <img src="./images/get-started-collage.png" class="img-fluid" alt="Main Image" />
               </div>
@@ -616,6 +611,13 @@
         arrows: true,
         prevArrow: $(".prev-arrow"),
         nextArrow: $(".next-arrow"),
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
       });
     </script>
   </body>
