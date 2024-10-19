@@ -572,9 +572,26 @@ body {
   height: 211px;
 }
 
+.platform-section-decor-4 {
+  position: absolute;
+  top: 450px;
+  right: 35%;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd558, rgba(255, 213, 88, 0));
+  filter: blur(35px);
+}
+
 @media (min-width: 1400px) {
   .platform-section-decor-3 {
     display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .platform-section-decor-4 {
+    display: none;
   }
 }
 
