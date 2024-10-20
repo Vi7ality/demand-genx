@@ -840,6 +840,12 @@ body {
   }
 }
 
+@media (max-width: 990px) {
+  .lead-section-bg {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1400px) {
   .lead-second-img {
     width: 300px;
@@ -1038,11 +1044,7 @@ body {
 .footer_social-title {
   font-size: 36px;
 }
-@media (min-width: 1530px) {
-  .footer_social-title {
-    font-size: 48px;
-  }
-}
+
 .footer_social-link {
   border: solid 1px var(--primary-white-color);
   border-radius: 50%;
@@ -1083,5 +1085,11 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
+  }
+}
+
+@media (min-width: 1530px) {
+  .footer_social-title {
+    font-size: 48px;
   }
 }
