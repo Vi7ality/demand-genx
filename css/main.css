@@ -284,12 +284,15 @@ body {
 /* Slider */
 .slider-container {
   max-width: 800px;
-  max-height: 500px;
   margin: auto;
 }
 
+.slick-slide div {
+  height: 100%;
+}
+
 .slider-elipse-decor {
-  display: none;
+  display: block;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -303,11 +306,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media (min-width: 1760px) {
-  .slider-elipse-decor {
-    display: block;
-  }
-}
 
 .slider-item-styled {
   width: auto !important;
@@ -318,14 +316,39 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+
 .prev-arrow,
 .next-arrow {
   position: absolute;
-
   background: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+.prev-arrow svg,
+.next-arrow svg {
+  width: 36px;
+  height: 26px;
+}
+
+.prev-arrow {
+  bottom: 0;
+  right: 40%;
+}
+
+.next-arrow {
+  bottom: 0;
+  right: 15%;
+}
+
+.slick-arrow {
+  display: block !important; /* Ensure arrows are always visible */
+}
+
+.slick-hidden {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 @media (max-width: 768px) {
@@ -345,20 +368,16 @@ body {
     display: none;
   }
 }
-.prev-arrow svg,
-.next-arrow svg {
-  width: 36px;
-  height: 26px;
-}
 
-.prev-arrow {
-  bottom: -10%;
-  right: 40%;
-}
+@media (max-width: 1200px) {
+  .slider-elipse-decor {
+    top: 65%;
+  }
 
-.next-arrow {
-  bottom: -10%;
-  right: 15%;
+  .prev-arrow,
+  .next-arrow {
+    bottom: -10%;
+  }
 }
 
 /* GET Started section*/
@@ -445,6 +464,8 @@ body {
   left: 0;
   z-index: -1;
   background-image: url("../images/get-started_dots-left.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 144px;
   height: 199px;
 }
@@ -454,6 +475,8 @@ body {
   right: 0;
   z-index: -1;
   background-image: url("../images/get-started_dots-right-up.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 228px;
   height: 275px;
 }
@@ -463,11 +486,13 @@ body {
   right: 16%;
   z-index: -1;
   background-image: url("../images/get-started_dots-right-down.svg");
-  width: 387px;
-  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 287px;
+  height: 150px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   .get-started-section-decor-1 {
     width: 244px;
     height: 299px;
