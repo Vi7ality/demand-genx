@@ -93,6 +93,11 @@ body {
   font-weight: 500;
   font-size: 19px;
   line-height: 133%;
+  -webkit-transition: background 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  transition: background 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  -o-transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
 }
 
 .search-wrap {
@@ -340,15 +345,6 @@ body {
 .next-arrow {
   bottom: 0;
   right: 15%;
-}
-
-.slick-arrow {
-  display: block !important; /* Ensure arrows are always visible */
-}
-
-.slick-hidden {
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 
 @media (max-width: 768px) {
