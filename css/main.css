@@ -908,14 +908,16 @@ body {
 }
 
 .stats-left {
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px 20px 0 0;
+
   -webkit-box-shadow: 0 4px 30px -20px rgba(0, 0, 0, 0.59);
   box-shadow: 0 4px 30px -20px rgba(0, 0, 0, 0.59);
   background: #4d66f1;
 }
 
 .stats-right {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 0 20px 20px;
+
   background: rgba(217, 217, 217, 0.3);
 }
 
@@ -929,6 +931,16 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 87%;
+}
+
+@media (min-width: 990px) {
+  .stats-left {
+    border-radius: 20px 0 0 20px;
+  }
+
+  .stats-right {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 @media (max-width: 768px) {
