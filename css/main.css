@@ -148,9 +148,30 @@ body {
     height: 50px;
   }
 }
-
+/* Dropdown products */
 .nav-link.dropdown-toggle::after {
   display: none;
+}
+
+.dropdown-item {
+  color: var(--text-grey-color);
+}
+.dropdown_icon {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background: rgba(18, 43, 78, 0.05);
+}
+.dropdown_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.dropdown_sub-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
 }
 
 /* Hero section */
