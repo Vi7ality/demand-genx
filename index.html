@@ -121,7 +121,7 @@
               </p>
 
               <!-- Registration Form -->
-              <div class="row mb-5" data-aos="slide-left">
+              <div class="row mb-5" data-aos="slide-left" data-aos-offset="0">
                 <div class="col-12">
                   <form class="bg-register">
                     <div>
@@ -256,7 +256,7 @@
 
             <!-- Right Content: Video Call Images and Stats -->
             <div class="row">
-              <div class="col-lg-4" data-aos="slide-right">
+              <div class="col-lg-4" data-aos="slide-right" data-aos-offset="0">
                 <p class="platform_text">
                   You'll capture powerful engagement signals directly into marketing automation and
                   CRM platforms to activate from there; you can embed your channels directly on your
@@ -273,7 +273,11 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-12 mt-4 mt-lg-0" data-aos="slide-left">
+              <div
+                class="col-lg-8 col-md-12 mt-4 mt-lg-0"
+                data-aos="slide-left"
+                data-aos-offset="0"
+              >
                 <div class="row g-3 position-relative">
                   <!-- Video Call Grid -->
                   <div class="col-12">
@@ -603,6 +607,8 @@
     <script>
       AOS.init({
         duration: 1000,
+        offset: 50,
+        once: true,
       });
     </script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
