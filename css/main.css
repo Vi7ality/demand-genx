@@ -149,6 +149,10 @@ body {
   }
 }
 
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
 /* Hero section */
 .bg-hero {
   position: relative;
