@@ -78,6 +78,11 @@ body {
 
 /* Header */
 
+.nav-logo {
+  width: 239px;
+  height: 78px;
+}
+
 .nav-link_styled {
   font-size: 20px;
   font-weight: 700;
