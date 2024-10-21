@@ -274,7 +274,7 @@ body {
   background: -o-linear-gradient(right, #7c61f0 0%, #0970f7 100%);
   background: linear-gradient(270deg, #7c61f0 0%, #0970f7 100%);
   border-radius: 11px;
-  width: 100%;
+  width: 270px;
   height: 65px;
   font-weight: 600;
   font-size: 22px;
@@ -350,6 +350,45 @@ body {
 .next-arrow {
   bottom: 0;
   right: 15%;
+}
+
+@media (max-width: 1400px) {
+  .subheading-styles {
+    font-size: 18px;
+    gap: 20px;
+    margin-bottom: 18px;
+  }
+
+  .hero-title-styled {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    max-width: 700px;
+  }
+
+  .bg-register {
+    padding: 25px;
+    max-width: 688px;
+  }
+
+  .input-styles {
+    font-size: 20px;
+  }
+
+  .register-btn-styles {
+    height: 55px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .slick-slider img {
+    height: 392px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
