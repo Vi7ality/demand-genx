@@ -380,6 +380,7 @@ body {
 
   .register-btn-styles {
     height: 55px;
+    width: 150px;
     font-weight: 600;
     font-size: 18px;
     margin-top: 10px;
@@ -434,7 +435,9 @@ body {
   .slick-slider img {
     height: 292px;
   }
-}
+
+    .register-btn-styles {
+    width: 100%; }
 
 /* GET Started section*/
 
