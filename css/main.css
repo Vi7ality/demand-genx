@@ -347,6 +347,25 @@ body {
   right: 15%;
 }
 
+@media (max-width: 1200px) {
+  .slider-container {
+    max-width: 600px;
+  }
+
+  .slider-elipse-decor {
+    top: 65%;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    bottom: -10%;
+  }
+
+  .slick-slider img {
+    height: 392px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-title-styled {
     font-size: 36px;
@@ -363,16 +382,13 @@ body {
   .side-pannel {
     display: none;
   }
-}
 
-@media (max-width: 1200px) {
-  .slider-elipse-decor {
-    top: 65%;
+  .slider-container {
+    max-width: 400px;
   }
 
-  .prev-arrow,
-  .next-arrow {
-    bottom: -10%;
+  .slick-slider img {
+    height: 292px;
   }
 }
 
