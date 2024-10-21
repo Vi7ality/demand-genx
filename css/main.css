@@ -495,25 +495,6 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .get-started__collage {
-    margin-top: 50px;
-  }
-
-  .get-started_title {
-    font-size: 36px;
-  }
-
-  .get-started_text {
-    font-size: 18px;
-  }
-
-  .learn-more-link-2 {
-    font-size: 18px;
-    height: 50px;
-  }
-}
-
 .get-started-section-decor-1 {
   position: absolute;
   top: 0;
@@ -563,6 +544,37 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .get-started__collage {
+    margin-top: 100px;
+  }
+
+  .get-started_content-wrap {
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .get-started_title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--text-orange-color);
+  }
+
+  .get-started_text {
+    font-size: 20px;
+  }
+
+  .learn-more-link-2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .get-started__collage {
+    margin-top: 0;
+  }
+}
+
 /* Audience section */
 
 .audience-section {
@@ -605,7 +617,18 @@ body {
   background: linear-gradient(90deg, #5265f0 0%, #7961f0 100%);
 }
 
-@media (max-width: 768px) {
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1400px) {
   .audience_title {
     font-size: 36px;
   }
@@ -618,17 +641,6 @@ body {
     font-size: 18px;
     height: 50px;
   }
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.shadow {
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Platform section */
@@ -816,7 +828,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .platform_title {
     font-size: 36px;
   }
@@ -882,7 +894,7 @@ body {
   line-height: 105%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .lead_title {
     font-size: 36px;
   }
@@ -968,7 +980,7 @@ body {
   line-height: 140%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .content_title {
     font-size: 36px;
   }
@@ -1032,6 +1044,21 @@ body {
   line-height: 87%;
 }
 
+@media (max-width: 1400px) {
+  .reviews_title {
+    font-size: 36px;
+  }
+
+  .reviews_text {
+    font-size: 18px;
+  }
+
+  .stats-right_link {
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
 @media (min-width: 990px) {
   .stats-left {
     border-radius: 20px 0 0 20px;
@@ -1039,21 +1066,6 @@ body {
 
   .stats-right {
     border-radius: 0 20px 20px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .review_title {
-    font-size: 36px;
-  }
-
-  .review_text {
-    font-size: 18px;
-  }
-
-  .stats-right_link {
-    font-size: 18px;
-    height: 50px;
   }
 }
 
